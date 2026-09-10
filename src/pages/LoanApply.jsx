@@ -99,7 +99,7 @@ export default function LoanApply() {
           Credit Loan Application
         </h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem', marginBottom: '1.5rem' }}>
-          Complete the borrower information below. Your application will be saved with status <strong>"Pending"</strong> until submission processing fee is completed.
+          Complete the borrower information below to proceed with your loan application.
         </p>
 
         {error && (
@@ -249,11 +249,6 @@ export default function LoanApply() {
                 required
               />
             </div>
-          </div>
-
-          {/* Submission Info Box */}
-          <div style={{ background: '#f8fafc', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border-color)', marginTop: '1.25rem', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-            💡 <strong>Next Step:</strong> Upon clicking "Proceed to Payment", your loan record will be saved in MongoDB with status <strong>Pending</strong>. You will then proceed to simulate the processing fee transaction.
           </div>
 
           <button
